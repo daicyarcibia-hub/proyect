@@ -1,0 +1,726 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+
+/* =========================================
+   PÁGINA DE LOGIN
+========================================= */
+
+.login-body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a5f
+    );
+}
+
+
+.login-container {
+    width: 400px;
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.login-header h1 {
+    color: #1e3a5f;
+    margin-bottom: 10px;
+}
+
+
+.login-header p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   FORMULARIOS
+========================================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+    color: #334155;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    background-color: white;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+
+    outline: none;
+
+    border-color: #2563eb;
+}
+
+
+/* =========================================
+   BOTONES
+========================================= */
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+
+.btn-login {
+
+    width: 100%;
+
+    padding: 13px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+.btn-login:hover {
+    background-color: #1d4ed8;
+}
+
+
+.btn-principal {
+
+    padding: 12px 22px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+
+.btn-principal:hover {
+    background-color: #1d4ed8;
+}
+
+
+.btn-secundario {
+
+    padding: 12px 22px;
+
+    background-color: #64748b;
+
+    color: white;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+
+.btn-secundario:hover {
+    background-color: #475569;
+}
+
+
+/* =========================================
+   ESTRUCTURA DEL SISTEMA
+========================================= */
+
+.sistema {
+    display: flex;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   MENÚ LATERAL
+========================================= */
+
+.sidebar {
+
+    width: 260px;
+
+    min-height: 100vh;
+
+    background-color: #0f172a;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.logo {
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #334155;
+}
+
+
+.logo h2 {
+    font-size: 20px;
+}
+
+
+.logo p {
+
+    margin-top: 8px;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+.sidebar nav {
+
+    padding: 20px 10px;
+}
+
+
+.sidebar nav a,
+.menu-salir a {
+
+    display: block;
+
+    color: #cbd5e1;
+
+    text-decoration: none;
+
+    padding: 14px 15px;
+
+    margin-bottom: 5px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+}
+
+
+.sidebar nav a:hover,
+.menu-salir a:hover {
+
+    background-color: #1e293b;
+
+    color: white;
+}
+
+
+.sidebar nav .menu-activo {
+
+    background-color: #2563eb;
+
+    color: white;
+}
+
+
+.menu-salir {
+
+    margin-top: auto;
+
+    padding: 15px;
+
+    border-top: 1px solid #334155;
+}
+
+
+.menu-salir a {
+    margin: 0;
+}
+
+
+/* =========================================
+   CONTENIDO PRINCIPAL
+========================================= */
+
+.contenido {
+
+    flex: 1;
+
+    min-width: 0;
+
+    background-color: #f1f5f9;
+}
+
+
+.topbar {
+
+    height: 75px;
+
+    background-color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+
+.topbar h1 {
+
+    font-size: 22px;
+
+    color: #1e293b;
+}
+
+
+.topbar span {
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   BIENVENIDA
+========================================= */
+
+.bienvenida {
+
+    margin: 30px;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    border-left: 5px solid #2563eb;
+}
+
+
+.bienvenida h2 {
+
+    margin-bottom: 10px;
+
+    color: #1e3a5f;
+}
+
+
+.bienvenida p {
+
+    color: #64748b;
+}
+
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.tarjetas {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    margin: 30px;
+}
+
+
+.tarjeta {
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    color: #1e293b;
+
+    border: 1px solid #e2e8f0;
+
+    transition: 0.2s;
+}
+
+
+.tarjeta:hover {
+
+    transform: translateY(-3px);
+
+    border-color: #2563eb;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.icono {
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+
+.tarjeta h3 {
+
+    margin-bottom: 10px;
+
+    color: #1e3a5f;
+}
+
+
+.tarjeta p {
+
+    color: #64748b;
+
+    line-height: 1.5;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   PANELES
+========================================= */
+
+.panel {
+
+    background-color: white;
+
+    margin: 30px;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    border: 1px solid #e2e8f0;
+}
+
+
+.panel h2 {
+
+    margin-bottom: 25px;
+
+    color: #1e3a5f;
+}
+
+
+/* =========================================
+   GRID DE FORMULARIOS
+========================================= */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.botones {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   TABLA
+========================================= */
+
+.tabla-contenedor {
+
+    overflow-x: auto;
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+
+table th {
+
+    background-color: #1e3a5f;
+
+    color: white;
+
+    padding: 13px;
+
+    text-align: left;
+
+    font-size: 14px;
+}
+
+
+table td {
+
+    padding: 13px;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    font-size: 14px;
+}
+
+
+table tr:hover {
+
+    background-color: #f8fafc;
+}
+
+
+/* =========================================
+   ESTADOS
+========================================= */
+
+.estado {
+
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.recibido {
+
+    background-color: #dcfce7;
+
+    color: #166534;
+}
+
+
+.proceso {
+
+    background-color: #fef3c7;
+
+    color: #92400e;
+}
+
+
+/* =========================================
+   BUSCAR PARA EDITAR
+========================================= */
+
+.buscar-editar {
+
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.buscar-editar input {
+
+    flex: 1;
+
+    padding: 12px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   AYUDA
+========================================= */
+
+.ayuda-item {
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+
+.ayuda-item:last-child {
+
+    border-bottom: none;
+}
+
+
+.ayuda-item h3 {
+
+    color: #2563eb;
+
+    margin-bottom: 8px;
+}
+
+
+.ayuda-item p {
+
+    color: #64748b;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .sidebar {
+
+        width: 210px;
+    }
+
+    .tarjetas {
+
+        grid-template-columns: 1fr;
+    }
+
+    .form-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .sistema {
+
+        flex-direction: column;
+    }
+
+    .sidebar {
+
+        width: 100%;
+
+        min-height: auto;
+    }
+
+    .sidebar nav {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 5px;
+    }
+
+    .sidebar nav a {
+
+        flex: 1;
+
+        min-width: 150px;
+    }
+
+    .menu-salir {
+
+        margin-top: 0;
+    }
+
+    .topbar {
+
+        padding: 0 15px;
+    }
+
+    .topbar span {
+
+        display: none;
+    }
+
+    .panel,
+    .bienvenida,
+    .tarjetas {
+
+        margin: 15px;
+    }
+
+    .login-container {
+
+        width: 90%;
+    }
+
+}
